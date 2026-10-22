@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuantika | Instituto Superior Técnico kuantica Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Barra Superior de Anuncios -->
+    <div class="top-announcement">
+        <span><i class="fa-solid fa-bolt text-neon-cyan"></i> ADMISIÓN 2026-I | CIERRE DE POSTULACIONES EN: <strong id="countdownTimer">00d 00h 00m 00s</strong></span>
+        <a href="#registro" class="announcement-link">Postular Hoy <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <!-- Navegación -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-atom"></i>
+                <span>Kuantika</span>
+                <small class="logo-sub">kuantika TECH</small>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-item active">Inicio</a></li>
+                <li><a href="#metodologia" class="nav-item">Metodología</a></li>
+                <li><a href="#programas" class="nav-item">Carreras</a></li>
+                <li><a href="#calculadora" class="nav-item">Calculadora</a></li>
+                <li><a href="#testimonios" class="nav-item">Egresados</a></li>
+                <li><a href="#faq" class="nav-item">Preguntas</a></li>
+                <li><a href="#contacto" class="nav-item">Contacto</a></li>
+                <li><a href="#registro" class="btn-neon"><i class="fa-solid fa-rocket"></i> Postular</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <div class="hero-tag">
+                        <i class="fa-solid fa-shield-halved"></i> TITULACIÓN OFICIAL A NOMBRE DE LA NACIÓN
+                    </div>
+                    <h1 class="hero-title">
+                        Lidera la era de la <span class="text-neon-cyan">Inteligencia Artificial</span> y la <span class="text-neon-purple">Cibertecnología</span>
+                    </h1>
+                    <p class="hero-description">
+                        Educación técnica de grado superior con simuladores holográficos, laboratorios de última generación y certificaciones internacionales con empresas multinacionales.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#programas" class="btn-neon">
+                            <i class="fa-solid fa-graduation-cap"></i> Explorar Carreras
+                        </a>
+                        <button class="btn-neon btn-neon-purple" id="openModalVideo">
+                            <i class="fa-solid fa-circle-play"></i> Tour Virtual 360°
+                        </button>
+                    </div>
+                    <div class="hero-trust">
+                        <span>Convenios con:</span>
+                        <div class="trust-logos">
+                            <i class="fa-brands fa-aws" title="AWS Educate"></i>
+                            <i class="fa-brands fa-microsoft" title="Microsoft Academy"></i>
+                            <i class="fa-brands fa-google" title="Google Cloud"></i>
+                            <i class="fa-brands fa-python" title="Python Institute"></i>
+                            <i class="fa-brands fa-docker" title="Docker Certified"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hologram-card glass-card">
+                        <div class="hologram-header">
+                            <span class="badge-live"><i class="fa-solid fa-satellite"></i> NODO MATRIZ ACTIVO</span>
+                            <i class="fa-solid fa-microchip text-neon-cyan fa-spin-pulse"></i>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="98">0</div><span class="stat-symbol">%</span>
+                                <div class="stat-label">Inserción Laboral</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="18000">0</div><span class="stat-symbol">+</span>
+                                <div class="stat-label">Egresados Tech</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="45">0</div><span class="stat-symbol">+</span>
+                                <div class="stat-label">Laboratorios 3D</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="100">0</div><span class="stat-symbol">%</span>
+                                <div class="stat-label">Prácticas Remotas</div>
+                            </div>
+                        </div>
+                        <div class="holo-badge">
+                            <i class="fa-solid fa-award"></i>
+                            <div>
+                                <strong>Grado Técnico Superior Kuantica</strong>
+                                <span>3 Años | 6 Semestres de Alta Especialización</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metodología de Aprendizaje -->
+        <section id="metodologia" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Innovación Pedagógica</span>
+                    <h2 class="section-title">Nuestra Metodología CyberTech</h2>
+                </div>
+
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="tab-1"><i class="fa-solid fa-vr-cardboard"></i> Simuladores VR</button>
+                        <button class="tab-btn" data-tab="tab-2"><i class="fa-solid fa-brain"></i> IA Aplicada</button>
+                        <button class="tab-btn" data-tab="tab-3"><i class="fa-solid fa-laptop-code"></i> Proyectos Reales</button>
+                        <button class="tab-btn" data-tab="tab-4"><i class="fa-solid fa-globe"></i> Doble Certificación</button>
+                    </div>
+
+                    <div class="tab-content active" id="tab-1">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Laboratorios Virtuales e Inmersivos</h3>
+                                <p>Aprende configurando redes de ciberseguridad y servidores cloud en entornos virtuales 3D sin riesgo. Practica ataques y defensas cibernéticas en simuladores en tiempo real.</p>
+                                <ul class="check-list">
+                                    <li><i class="fa-solid fa-check text-neon-cyan"></i> Redes simuladas de nivel empresarial Cisco.</li>
+                                    <li><i class="fa-solid fa-check text-neon-cyan"></i> Entornos sandbox de Ethical Hacking.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-media">
+                                <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=800&q=80" alt="Simuladores VR">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="tab-2">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Agentes de IA como Asistentes de Estudio</h3>
+                                <p>Cada estudiante cuenta con tutores de Inteligencia Artificial personalizados 24/7 para revisión de código, optimización de algoritmos y mentoría constante.</p>
+                                <ul class="check-list">
+                                    <li><i class="fa-solid fa-check text-neon-cyan"></i> Code Review instantáneo con GPT-4.</li>
+                                    <li><i class="fa-solid fa-check text-neon-cyan"></i> Ruta de aprendizaje personalizada según tu progreso.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-media">
+                                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="IA Aplicada">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="tab-3">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Aprende Trabajando para Empresas Reales</h3>
+                                <p>Desde el tercer semestre participas en incubadoras de software solucionando problemas reales planteados por industrias asociadas.</p>
+                                <ul class="check-list">
+                                    <li><i class="fa-solid fa-check text-neon-cyan"></i> Metodología Agile / Scrum con mentores Senior.</li>
+                                    <li><i class="fa-solid fa-check text-neon-cyan"></i> Portafolio profesional listo para presentar en entrevistas.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-media">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Proyectos Reales">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="tab-4">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Egresa con Certificaciones Internacionales</h3>
+                                <p>No solo obtienes tu Título Profesional a Nombre de la Nación, también egresas certificado por AWS, Cisco, Python Institute y Microsoft.</p>
+                                <ul class="check-list">
+                                    <li><i class="fa-solid fa-check text-neon-cyan"></i> Exámenes de certificación incluidos en la pensión.</li>
+                                    <li><i class="fa-solid fa-check text-neon-cyan"></i> Respaldo institucional reconocido globalmente.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-media">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Certificaciones">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programas y Filtro de Carreras -->
+        <section id="programas" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Programas de Alto Impacto</span>
+                    <h2 class="section-title">Carreras Técnicas Profesionales</h2>
+                </div>
+
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="dev">Software e IA</button>
+                    <button class="filter-btn" data-filter="cyber">Ciberseguridad y Redes</button>
+                    <button class="filter-btn" data-filter="biz">Gestión Digital</button>
+                </div>
+
+                <div class="programs-grid">
+                    <!-- Carrera 1 -->
+                    <div class="glass-card program-card" data-category="dev">
+                        <div class="program-img-wrapper">
+                            <span class="program-tag">ALTA DEMANDA</span>
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Desarrollo de Software">
+                        </div>
+                        <div class="program-content">
+                            <h3 class="program-title">Ingeniería de Software e IA</h3>
+                            <p class="program-desc">Diseña sistemas inteligentes, aplicaciones web full-stack, arquitecturas cloud y modelos de aprendizaje profundo.</p>
+                            <div class="tech-stack">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">TensorFlow</span>
+                                <span class="tech-pill">Docker</span>
+                            </div>
+                            <div class="program-footer">
+                                <button class="btn-neon view-syllabus" data-career="software">Ver Plan de Estudios</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carrera 2 -->
+                    <div class="glass-card program-card" data-category="cyber">
+                        <div class="program-img-wrapper">
+                            <span class="program-tag">CIBERSEGURIDAD</span>
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Redes y Ciberseguridad">
+                        </div>
+                        <div class="program-content">
+                            <h3 class="program-title">Ciberseguridad & Redes Cloud</h3>
+                            <p class="program-desc">Especialízate en hacking ético, seguridad defensiva, auditoría de sistemas e infraestructura híbrida cloud.</p>
+                            <div class="tech-stack">
+                                <span class="tech-pill">Ethical Hacking</span>
+                                <span class="tech-pill">Cisco CCNA</span>
+                                <span class="tech-pill">AWS Security</span>
+                                <span class="tech-pill">Linux</span>
+                            </div>
+                            <div class="program-footer">
+                                <button class="btn-neon view-syllabus" data-career="ciberseguridad">Ver Plan de Estudios</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carrera 3 -->
+                    <div class="glass-card program-card" data-category="biz">
+                        <div class="program-img-wrapper">
+                            <span class="program-tag">GESTIÓN TECH</span>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Administración Digital">
+                        </div>
+                        <div class="program-content">
+                            <h3 class="program-title">Administración y Negocios Digitales</h3>
+                            <p class="program-desc">Lidera empresas tecnológicas aplicando analítica de datos, gestión ágil de proyectos, Fintech y E-commerce.</p>
+                            <div class="tech-stack">
+                                <span class="tech-pill">Power BI</span>
+                                <span class="tech-pill">Scrum Master</span>
+                                <span class="tech-pill">Fintech</span>
+                                <span class="tech-pill">SEO/Growth</span>
+                            </div>
+                            <div class="program-footer">
+                                <button class="btn-neon view-syllabus" data-career="administracion">Ver Plan de Estudios</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carrera 4 -->
+                    <div class="glass-card program-card" data-category="dev">
+                        <div class="program-img-wrapper">
+                            <span class="program-tag">NUEVA</span>
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Ciencia de Datos">
+                        </div>
+                        <div class="program-content">
+                            <h3 class="program-title">Big Data & Data Science</h3>
+                            <p class="program-desc">Transforma volúmenes masivos de datos en predicciones clave estratégicas para la toma de decisiones empresariales.</p>
+                            <div class="tech-stack">
+                                <span class="tech-pill">SQL / NoSQL</span>
+                                <span class="tech-pill">PySpark</span>
+                                <span class="tech-pill">R</span>
+                                <span class="tech-pill">Machine Learning</span>
+                            </div>
+                            <div class="program-footer">
+                                <button class="btn-neon view-syllabus" data-career="data">Ver Plan de Estudios</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculadora de Pensiones / Becas -->
+        <section id="calculadora" class="section-padding">
+            <div class="container">
+                <div class="calculator-wrapper glass-card">
+                    <div class="calc-header">
+                        <i class="fa-solid fa-calculator text-neon-cyan"></i>
+                        <h2>Simulador de Cuota y Beca de Excelencia</h2>
+                        <p>Calcula tu cuota mensual estimada según tu colegio de procedencia y rendimiento académico.</p>
+                    </div>
+
+                    <div class="calc-grid">
+                        <div class="calc-inputs">
+                            <div class="form-group">
+                                <label for="calcCarrera"><i class="fa-solid fa-book"></i> Carrera Seleccionada</label>
+                                <select id="calcCarrera" class="cyber-input">
+                                    <option value="software">Ingeniería de Software e IA</option>
+                                    <option value="ciberseguridad">Ciberseguridad & Redes</option>
+                                    <option value="administracion">Administración Digital</option>
+                                    <option value="data">Big Data & Data Science</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="calcPromedio"><i class="fa-solid fa-graduation-cap"></i> Promedio Escolar (Secundaria)</label>
+                                <input type="number" id="calcPromedio" class="cyber-input" min="11" max="20" value="16" placeholder="Ej. 16">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="calcColegio"><i class="fa-solid fa-school"></i> Tipo de Colegio</label>
+                                <select id="calcColegio" class="cyber-input">
+                                    <option value="estatal">Colegio Estatal / Nacional</option>
+                                    <option value="particular">Colegio Particular / Privado</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="calc-result">
+                            <div class="result-box">
+                                <span class="result-label">Pensión Regular Estándar</span>
+                                <div class="price-strikethrough">S/ <span id="priceBase">650</span></div>
+                                <span class="result-label text-neon-cyan">Tu Cuota Mensual Estimada con Beca:</span>
+                                <div class="price-final">S/ <span id="priceFinal">455</span></div>
+                                <span class="discount-badge" id="discountBadge">¡Descuento Beca del 30% Aplicado!</span>
+                            </div>
+                            <a href="#registro" class="btn-neon btn-neon-purple" style="width: 100%; text-align: center; justify-content: center;">
+                                <i class="fa-solid fa-file-signature"></i> Congelar Beca Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios de Egresados -->
+        <section id="testimonios" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Casos de Éxito</span>
+                    <h2 class="section-title">Egresados en Grandes Ligas</h2>
+                </div>
+
+                <div class="testimonials-slider">
+                    <div class="testimonial-card glass-card">
+                        <div class="user-avatar">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Valeria Gómez">
+                        </div>
+                        <div class="user-info">
+                            <h4>Valeria Gómez</h4>
+                            <span class="text-neon-cyan">Cloud Security Engineer en Globant</span>
+                        </div>
+                        <p class="user-comment">
+                            "Kuantika me dio las bases prácticas exactas. Pasé los exámenes de certificación de Cisco mientras estudiaba y conseguí trabajo remoto antes de egresar."
+                        </p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card">
+                        <div class="user-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Carlos Mendoza">
+                        </div>
+                        <div class="user-info">
+                            <h4>Carlos Mendoza</h4>
+                            <span class="text-neon-purple">Full-Stack Lead en Mercado Libre</span>
+                        </div>
+                        <p class="user-comment">
+                            "La metodología con simuladores e IA te enfrenta a la realidad laboral. Desarrollamos sistemas desde el día 1, no perdimos tiempo en teoría desactualizada."
+                        </p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes (FAQ Accordion) -->
+        <section id="faq" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Resolvamos tus dudas</span>
+                    <h2 class="section-title">Preguntas Frecuentes</h2>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item glass-card">
+                        <button class="faq-header">
+                            <span>¿El título otorgado es oficial a Nombre de la Nación?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <p>Sí. Otorgamos el Título Profesional Técnico emitido con valor oficial del Ministerio de Educación y el respaldo de la calidad formativa SENATI.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <button class="faq-header">
+                            <span>¿Cuáles son las modalidades de estudio?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <p>Contamos con modalidad Híbrida (clases teóricas online en vivo + laboratorios presenciales) y modalidad 100% Remota Interactiva con simuladores en la nube.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <button class="faq-header">
+                            <span>¿Necesito conocimientos previos de programación o tecnología?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <p>No. Todas las carreras inician desde el nivel introductorio (Semestre Nivelatorio) donde nivelamos a los alumnos en lógica, matemática aplicada e informática básica.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-card">
+                        <button class="faq-header">
+                            <span>¿Cómo funciona la Bolsa de Trabajo?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <p>Tenemos convenios directos con más de 200 empresas del sector tecnológico. Desde el 4to semestre tienes acceso prioritario a convocatorias exclusivas de prácticas pre-profesionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Registro Interactivo -->
+        <section id="registro" class="section-padding">
+            <div class="container">
+                <div class="cyber-form-container">
+                    <div class="glass-card">
+                        <div class="terminal-header">
+                            <div class="term-btn term-red"></div>
+                            <div class="term-btn term-yellow"></div>
+                            <div class="term-btn term-green"></div>
+                            <span class="term-title">terminal_admision_kuantika_v3.2.exe</span>
+                        </div>
+
+                        <div class="form-body">
+                            <h3 class="text-neon-cyan" style="font-size: 1.8rem; margin-bottom: 0.5rem; text-align: center;">Postula a la Admisión 2026-I</h3>
+                            <p style="color: var(--text-dim); text-align: center; margin-bottom: 2rem; font-size: 0.95rem;">Reserva tu vacante e inicia tu proceso de evaluación en línea.</p>
+
+                            <div id="cyberAlert" class="cyber-alert" style="display: none;">
+                                <i class="fa-solid fa-circle-info" id="alertIcon"></i>
+                                <span id="alertMessage"></span>
+                            </div>
+
+                            <form id="cyberForm" novalidate>
+                                <div class="form-grid">
+                                    <div>
+                                        <label class="form-label" for="nombre">NOMBRES Y APELLIDOS</label>
+                                        <input type="text" id="nombre" class="cyber-input" placeholder="Sonyu Mayta">
+                                    </div>
+                                    <div>
+                                        <label class="form-label" for="email">CORREO ELECTRÓNICO</label>
+                                        <input type="email" id="email" class="cyber-input" placeholder="sonyu@.net">
+                                    </div>
+                                    <div>
+                                        <label class="form-label" for="telefono">TELÉFONO / WHATSAPP</label>
+                                        <input type="tel" id="telefono" class="cyber-input" placeholder="+51 999 888 777">
+                                    </div>
+                                    <div>
+                                        <label class="form-label" for="programa">PROGRAMA ACADÉMICO</label>
+                                        <select id="programa" class="cyber-input">
+                                            <option value="" disabled selected>Selecciona una opción</option>
+                                            <option value="software">Ingeniería de Software e IA</option>
+                                            <option value="ciberseguridad">Ciberseguridad & Redes Cloud</option>
+                                            <option value="administracion">Administración Digital</option>
+                                            <option value="data">Big Data & Data Science</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group-full">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" id="terminos">
+                                            <span class="custom-checkmark"></span>
+                                            <span>Acepto los términos de tratamiento de datos personales y privacidad.</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-group-full">
+                                        <button type="submit" class="btn-neon" style="width: 100%; justify-content: center; padding: 1.1rem;">
+                                            <i class="fa-solid fa-paper-plane"></i> ENVIAR SOLICITUD DE ADMISIÓN
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Pase de Admisión Generado dinámicamente -->
+                            <div id="ticketContainer" class="ticket-generated" style="display: none;">
+                                <div class="ticket-card glass-card">
+                                    <div class="ticket-header">
+                                        <i class="fa-solid fa-ticket text-neon-cyan"></i>
+                                        <span>PASE HOLOGRÁFICO DE ADMISIÓN</span>
+                                    </div>
+                                    <div class="ticket-body">
+                                        <h4 id="ticketName">Sonyu Mayta Flores</h4>
+                                        <p>Programa: <strong id="ticketCareer" class="text-neon-cyan">Ingeniería de Software</strong></p>
+                                        <p>Código postulante: <span id="ticketCode">KUA-2026-8849</span></p>
+                                        <p>Estado: <span class="badge-live">EVALUACIÓN PROGRAMADA</span></p>
+                                    </div>
+                                    <div class="ticket-qr">
+                                        <i class="fa-solid fa-qrcode fa-4x text-neon-cyan"></i>
+                                        <small>Presenta este código en tu WhatsApp</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot Flotante / Asistente Virtual -->
+    <div class="bot-widget">
+        <button id="botToggle" class="bot-btn" aria-label="Asistente Virtual">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        <div id="botBox" class="bot-box glass-card" style="display: none;">
+            <div class="bot-header">
+                <div class="bot-avatar"><i class="fa-solid fa-atom text-neon-cyan"></i></div>
+                <div>
+                    <strong>Kuan-AI</strong>
+                    <small>Asistente Virtual Kuantika</small>
+                </div>
+                <button id="botClose" class="bot-close">&times;</button>
+            </div>
+            <div class="bot-messages" id="botMessages">
+                <div class="msg bot-msg">¡Hola! Soy Kuan-AI 🤖. ¿En qué puedo ayudarte hoy? Selecciona una opción:</div>
+            </div>
+            <div class="bot-quick-actions">
+                <button class="quick-btn" data-query="carreras">📚 Ver Carreras</button>
+                <button class="quick-btn" data-query="pensiones">💰 Costo y Becas</button>
+                <button class="quick-btn" data-query="admision">📝 Proceso Admisión</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Plan de Estudios -->
+    <div id="modalSyllabus" class="modal-overlay" style="display: none;">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="closeSyllabus">&times;</button>
+            <h3 id="syllabusTitle" class="text-neon-cyan">Plan de Estudios</h3>
+            <p id="syllabusDesc">Estructura curricular detallada por semestres académicos.</p>
+            <div id="syllabusSemesters" class="syllabus-grid">
+                <!-- Se llena mediante JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tour Virtual Video -->
+    <div id="modalVideo" class="modal-overlay" style="display: none;">
+        <div class="modal-content glass-card video-modal">
+            <button class="modal-close" id="closeVideo">&times;</button>
+            <h3 class="text-neon-cyan">Tour Virtual 360° SENATI Tech</h3>
+            <div class="video-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" title="Tour Virtual" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-atom"></i>
+                        <span>Kuantika</span>
+                    </a>
+                    <p>Líderes en formación técnica profesional con enfoque en innovación cibernética, Inteligencia Artificial y transformación industrial.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#metodologia">Metodología</a></li>
+                        <li><a href="#programas">Carreras</a></li>
+                        <li><a href="#calculadora">Calculadora Beca</a></li>
+                        <li><a href="#registro">Admisión 2026</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contacto Directo</h4>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Av. Tecnológica 2049, Lima - Perú</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(01) 800-kuantica / +51 900 000 111</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>admision@kuantika.edu.pe</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kuantika Instituto Superior - Sonyu Mayta FLores. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
